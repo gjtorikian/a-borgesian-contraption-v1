@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -e
+
+rsync -azPr generator/pytorch root@104.248.0.84:borgesian-contraption/generator

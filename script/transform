@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+cd generator
+
+transformers-cli convert --model_type gpt2 --tf_checkpoint checkpoint/small_10k --pytorch_dump_output ./pytorch

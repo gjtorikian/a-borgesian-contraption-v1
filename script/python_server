@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+echo "===> Serving generator..."
+
+cd generator
+
+/usr/local/opt/python/bin/python3 -X utf8 server.py

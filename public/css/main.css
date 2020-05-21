@@ -1,0 +1,99 @@
+* {
+  font-family: "Courier Prime", monospace, sans-serif;
+}
+
+#holder {
+  color: #000000;
+}
+.bg-washed-blue {
+  background-color: #f6fffe;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  padding: 10vh 3.5rem 10vh 3.5rem;
+  flex: 1;
+}
+.navbar.has-shadow {
+  box-shadow: 0 1px 0 0 #666;
+}
+.name {
+  color: #363636;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#holder {
+  width: 100%;
+  line-height: 2;
+}
+
+.flash {
+  animation: flash 5s;
+}
+
+@keyframes flash {
+  0% {
+    background: #ffb700;
+  }
+  100% {
+    background: default;
+  }
+}
+
+.buttons {
+  flex-shrink: 0;
+}
+
+.buttons .button {
+  font-family: monospace;
+  min-height: 5rem;
+  min-width: 100%;
+  max-width: 100%;
+  border-color: #666;
+  white-space: pre-wrap;
+  margin-bottom: 1rem;
+  height: 100%;
+}
+
+footer.footer {
+  background-color: transparent;
+  padding: 3rem 2rem 3rem 2rem;
+}
+
+div.image-holder {
+  z-index: 10000;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0;
+}
+
+div.image-holder img {
+  opacity: 0.5;
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0;
+  max-width: 100%;
+}
+div.image-holder:hover img {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+@media screen and (max-device-width: 825px) {
+  .dn-custom {
+    display: none;
+  }
+  div.image-holder {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+echo "Installing Python3 dependencies..."
+cd generator
+/usr/local/opt/python/bin/python3 -m pip install -r requirements.txt --user
+
+
+echo "Installing Node dependencies..."
+cd ..
+npm install
